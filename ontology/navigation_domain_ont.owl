@@ -12,8 +12,8 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:tomasys="http://metacontrol.org/tomasys#">
     <owl:Ontology rdf:about="http://ros/navigation_domain">
-        <owl:versionIRI rdf:resource="http://ros/navigation_domain/1.0.0"/>
-        <owl:imports rdf:resource="http://ros/mros/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://ros/navigation_domain"/>
+        <owl:imports rdf:resource="http://ros/mros"/>
     </owl:Ontology>
     
 
@@ -237,7 +237,7 @@
     <owl:NamedIndividual rdf:about="http://ros/navigation_domain#qa_performance_degraded">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
         <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
-        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</tomasys:hasValue>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</tomasys:hasValue>
     </owl:NamedIndividual>
     
 
@@ -247,7 +247,7 @@
     <owl:NamedIndividual rdf:about="http://ros/navigation_domain#qa_performance_energy_saving">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
         <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
-        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.55</tomasys:hasValue>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</tomasys:hasValue>
     </owl:NamedIndividual>
     
 
@@ -277,7 +277,7 @@
     <owl:NamedIndividual rdf:about="http://ros/navigation_domain#qa_performance_slow">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
         <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
-        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</tomasys:hasValue>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</tomasys:hasValue>
     </owl:NamedIndividual>
     
 
