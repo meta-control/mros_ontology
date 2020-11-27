@@ -14,4 +14,11 @@ Formal ontologies contain terms that capture the concepts in the domain of analy
 
 ## The Ontologies
 
-The folder [**ontologies**](https://github.com/MROS-RobMoSys-ITP/metacontrol_ontology/tree/master/ontologies "MROS Ontologies") contains OWL2 files for the ontologies using OWL2 Functional Syntax. These files can be edited with any text editor or managed using a GUI-based tool like [Protégé](https://protege.stanford.edu/).
+The folder [**ontologies**](https://github.com/MROS-RobMoSys-ITP/metacontrol_ontology/tree/master/ontologies "MROS Ontologies") contains OWL2 files for the ontologies using OWL2 Functional Syntax. These files can be edited with any text editor or managed using a GUI-based tool like [Protégé](https://protege.stanford.edu/). The current structure is:
+
+- **TOMASys**: General systems ontology for component organization to reach objectives through functions. Here is defined the terminological components (TBox) through classes, properties and general rules. This is equivalent to the previous Metacontrol Ontology .
+- **MROS ontology**: TOMASys adaptation for MROS project ontology. TOMASys terminological components are extended with general error propagation rules and an object property to link components and function designs. Therefore, this ontology is the TBox that supports the specific pilot ontology. This is equivalent to the previous RobMoSys Ontology.
+- **Navigation-domain ontology**: Basic application-specific knowledge regarding navigation concepts. Assertion components (ABox) have been generated for usual navigation applications based on ROS2. This is equivalent to the previous Navigation Ontology.
+- **URJC Pilot ontology**: Ontology to capture application-specific knowledge, this is the assertion component (ABox). Here we define individuals and specific rules to transform the general knowledge of TOMASys into precise information for the pilot. 
+
+Additionally a **TEST URJC** Pilot has been added for testing in Protege the ontology coherence.
