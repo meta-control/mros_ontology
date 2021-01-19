@@ -1,10 +1,10 @@
 # MROS T3 Metacontrol Ontologies
 
-The purpose of MROS Task 3 is the development of an ontology to support metacontrol system modeling and run-time reasoning.
+The purpose of MROS Task 3 is the development of an ontology to support metacontrol system modeling and run-time reasoning. These ontologies are used by the metacontroller implementation available [here](https://github.com/tud-cor/mc_mros_reasoner/tree/foxy_devel), note that the MROS reasoner used is in the branch _foxy-devel_.
 
 ## Overall view
 
-The MROS objective is to use TOMASys [^1] concepts to implement a model-driven metacontroller for a ROS2 navigation system in two pilot robotic applications inside the RobMoSys framework.
+The MROS objective is to use TOMASys concepts to implement a model-driven metacontroller for a ROS2 navigation system in two pilot robotic applications inside the RobMoSys framework.
 
 The metacontroller will use a runtime reasoner that will exploit a system model to generate new runtime system configurations to overcome difficulties. This model and reasoner uses concepts that are reified in the form of an ontology captured in [Web Ontology Language v2](https://www.w3.org/TR/owl2-syntax/) (OWL 2).
 
