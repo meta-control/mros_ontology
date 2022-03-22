@@ -15,41 +15,6 @@
         <owl:versionIRI rdf:resource="http://ros/mros/1.0.0"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/meta-control/mc_mdl_tomasys/ros2/owl/tomasys.owl"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://metacontrol.org/tomasys#comp_status -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#comp_status">
-        <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Component"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://metacontrol.org/tomasys#cspec_availability -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#cspec_availability">
-        <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Component"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://metacontrol.org/tomasys#hasNFR -->
-
-    <owl:AnnotationProperty rdf:about="http://metacontrol.org/tomasys#hasNFR"/>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
