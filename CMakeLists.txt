@@ -10,6 +10,6 @@ set(mros_ontology_VERSION
   ${mros_ontology_MAJOR_VERSION}.${mros_ontology_MINOR_VERSION}.${mros_ontology_PATCH_VERSION})
 
 # launch
-install(DIRECTORY ontologies DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY owl DESTINATION share/${PROJECT_NAME})
 
 ament_package()
