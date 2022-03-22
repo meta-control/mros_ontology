@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1647960270444" name="http://ros/metacontrol/pilot_urjc" uri="urjc_pilot.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1647960270444" name="http://ros/metacontrol/test_pilot" uri="test_pilot.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1647960270444" name="http://ros/mros" uri="mros.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1647960270444" name="http://ros/navigation_domain" uri="navigation_domain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1647961151420" name="http://ros/metacontrol/pilot_urjc" uri="urjc_pilot.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1647961151420" name="http://ros/metacontrol/test_pilot_laser" uri="test_pilot_laser.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1647961151420" name="http://ros/metacontrol/test_pilot_nfr" uri="test_pilot_nfr.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1647961151420" name="http://ros/mros" uri="mros.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1647961151420" name="http://ros/navigation_domain" uri="navigation_domain.owl"/>
     </group>
 </catalog>
