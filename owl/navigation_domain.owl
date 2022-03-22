@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://ros/mros#"
-     xml:base="http://ros/mros"
+<rdf:RDF xmlns="http://ros/navigation_domain#"
+     xml:base="http://ros/navigation_domain"
+     xmlns:nav="http://ros/navigation_domain#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -13,7 +14,7 @@
      xmlns:tomasys="http://metacontrol.org/tomasys#">
     <owl:Ontology rdf:about="http://ros/navigation_domain">
         <owl:versionIRI rdf:resource="http://ros/navigation_domain"/>
-        <owl:imports rdf:resource="http://ros/mros"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/meta-control/mros_ontology/main/owl/mros.owl"/>
     </owl:Ontology>
     
 
