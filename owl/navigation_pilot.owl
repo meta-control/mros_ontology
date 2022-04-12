@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ros/metacontrol/nav_pilot#"
+     xml:base="http://ros/metacontrol/nav_pilot"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:nav="http://ros/metacontrol/nav_pilot#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:tomasys="http://metacontrol.org/tomasys#">
+    <owl:Ontology rdf:about="http://ros/metacontrol/nav_pilot">
+        <owl:versionIRI rdf:resource="http://ros/metacontrol/nav_pilot/1.0.0"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/meta-control/mc_mdl_tomasys/refactoring/owl/tomasys.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://metacontrol.org/tomasys#cspec_availability -->
+
+    <rdf:Description rdf:about="http://metacontrol.org/tomasys#cspec_availability">
+        <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Component"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#battery -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#battery">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_degraded_mode"/>
+        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_normal_mode"/>
+        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_performance_mode"/>
+        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_slow_mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#energy -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#energy">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QualityAttributeType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#f_degraded_mode -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#f_degraded_mode">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_energy_degraded"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_degraded"/>
+        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_degraded"/>
+        <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#f_energy_saving_mode -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#f_energy_saving_mode">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_energy_energy_saving"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_energy_saving"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_energy_saving"/>
+        <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
+        <tomasys:fd_realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:fd_realisability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#f_navigate -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#f_navigate">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#f_normal_mode -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#f_normal_mode">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_energy_normal"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_normal"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_normal"/>
+        <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
+        <tomasys:fd_realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:fd_realisability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#f_performance_mode -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#f_performance_mode">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_energy_performance"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_performance"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_performance"/>
+        <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
+        <tomasys:fd_realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:fd_realisability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#f_slow_mode -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#f_slow_mode">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_energy_slow"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_slow"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_slow"/>
+        <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
+        <tomasys:fd_realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:fd_realisability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#laser_resender -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#laser_resender">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_energy_saving_mode"/>
+        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_normal_mode"/>
+        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_performance_mode"/>
+        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_slow_mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#performance -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#performance">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QualityAttributeType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_energy_degraded -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_energy_degraded">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#energy"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_energy_energy_saving -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_energy_energy_saving">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#energy"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_energy_normal -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_energy_normal">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#energy"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_energy_performance -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_energy_performance">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#energy"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_energy_slow -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_energy_slow">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#energy"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.85</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_performance_degraded -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_performance_degraded">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#performance"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_performance_energy_saving -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_performance_energy_saving">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#performance"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_performance_normal -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_performance_normal">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#performance"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_performance_performance -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_performance_performance">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#performance"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_performance_slow -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_performance_slow">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#performance"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_safety_degraded -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_safety_degraded">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#safety"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.55</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_safety_energy_saving -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_safety_energy_saving">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#safety"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_safety_normal -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_safety_normal">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#safety"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_safety_performance -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_safety_performance">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#safety"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.55</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#qa_safety_slow -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_safety_slow">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#safety"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ros/metacontrol/nav_pilot#safety -->
+
+    <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#safety">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QualityAttributeType"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
