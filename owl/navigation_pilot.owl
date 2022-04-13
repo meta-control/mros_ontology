@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ros/metacontrol/nav_pilot#"
      xml:base="http://ros/metacontrol/nav_pilot"
+     xmlns:nav="http://ros/metacontrol/nav_pilot#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:nav="http://ros/metacontrol/nav_pilot#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
@@ -71,11 +71,10 @@
     <!-- http://ros/metacontrol/nav_pilot#f_degraded_mode -->
 
     <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#f_degraded_mode">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_energy_degraded"/>
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_degraded"/>
-        <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_degraded"/>
+        <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_degraded"/>
         <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
     </owl:NamedIndividual>
     
@@ -265,7 +264,6 @@
     <!-- http://ros/metacontrol/nav_pilot#qa_safety_degraded -->
 
     <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#qa_safety_degraded">
-        <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
         <tomasys:isQAtype rdf:resource="http://ros/metacontrol/nav_pilot#safety"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.55</tomasys:hasValue>
