@@ -21,6 +21,58 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://metacontrol.org/tomasys#hasQAestimation -->
+
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#hasQAestimation"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#isQAtype -->
+
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#isQAtype"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#requiredBy -->
+
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#requiredBy"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#solvesF -->
+
+    <owl:ObjectProperty rdf:about="http://metacontrol.org/tomasys#solvesF"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -29,11 +81,82 @@
     
 
 
+    <!-- http://metacontrol.org/tomasys#c_status -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#c_status"/>
+    
+
+
     <!-- http://metacontrol.org/tomasys#cspec_availability -->
 
-    <rdf:Description rdf:about="http://metacontrol.org/tomasys#cspec_availability">
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#cspec_availability">
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Component"/>
-    </rdf:Description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#hasValue"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#o_status -->
+
+    <owl:DatatypeProperty rdf:about="http://metacontrol.org/tomasys#o_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://metacontrol.org/tomasys#Component -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#Component"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#ComponentState -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#ComponentState"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#Function -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#Function"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#FunctionDesign -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#FunctionDesign"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#Objective -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#Objective"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#QAvalue -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#QAvalue"/>
+    
+
+
+    <!-- http://metacontrol.org/tomasys#QualityAttributeType -->
+
+    <owl:Class rdf:about="http://metacontrol.org/tomasys#QualityAttributeType"/>
     
 
 
@@ -52,6 +175,7 @@
 
     <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#battery">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#Component"/>
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
         <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_degraded_mode"/>
         <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_normal_mode"/>
         <tomasys:requiredBy rdf:resource="http://ros/metacontrol/nav_pilot#f_performance_mode"/>
@@ -88,7 +212,6 @@
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_energy_saving"/>
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_energy_saving"/>
         <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
-        <tomasys:fd_realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:fd_realisability>
     </owl:NamedIndividual>
     
 
@@ -109,7 +232,6 @@
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_normal"/>
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_normal"/>
         <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
-        <tomasys:fd_realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:fd_realisability>
     </owl:NamedIndividual>
     
 
@@ -122,7 +244,6 @@
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_performance"/>
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_performance"/>
         <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
-        <tomasys:fd_realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:fd_realisability>
     </owl:NamedIndividual>
     
 
@@ -135,7 +256,6 @@
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_performance_slow"/>
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/nav_pilot#qa_safety_slow"/>
         <tomasys:solvesF rdf:resource="http://ros/metacontrol/nav_pilot#f_navigate"/>
-        <tomasys:fd_realisability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tomasys:fd_realisability>
     </owl:NamedIndividual>
     
 
@@ -316,6 +436,81 @@
     <owl:NamedIndividual rdf:about="http://ros/metacontrol/nav_pilot#safety">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#QualityAttributeType"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://ros/metacontrol/nav_pilot#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ros/metacontrol/nav_pilot#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if component recovered, o updatable</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S15</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#Component"/>
+                        <swrl:argument1 rdf:resource="http://ros/metacontrol/nav_pilot#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#c_status"/>
+                                <swrl:argument1 rdf:resource="http://ros/metacontrol/nav_pilot#c"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RECOVERED</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#Objective"/>
+                                        <swrl:argument1 rdf:resource="http://ros/metacontrol/nav_pilot#o"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#o_status"/>
+                        <swrl:argument1 rdf:resource="http://ros/metacontrol/nav_pilot#o"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UPDATABLE</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 
