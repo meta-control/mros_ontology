@@ -12,10 +12,10 @@
         <owl:imports rdf:resource="https://raw.githubusercontent.com/meta-control/mc_mdl_tomasys/ros2/owl/tomasys.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/meta-control/mros_ontology/main/owl/mros.owl"/>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -23,7 +23,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://www.metacontrol.org/mock#f_mock -->
@@ -31,7 +31,7 @@
     <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#f_mock">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#Function"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://www.metacontrol.org/mock#fd_mock1 -->
@@ -39,9 +39,10 @@
     <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#fd_mock1">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_mockiness_low"/>
+        <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_performance_low"/>
         <tomasys:solvesF rdf:resource="http://www.metacontrol.org/mock#f_mock"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://www.metacontrol.org/mock#fd_mock2 -->
@@ -49,9 +50,10 @@
     <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#fd_mock2">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_mockiness_medium"/>
+        <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_performance_medium"/>
         <tomasys:solvesF rdf:resource="http://www.metacontrol.org/mock#f_mock"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://www.metacontrol.org/mock#fd_mock3 -->
@@ -59,9 +61,10 @@
     <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#fd_mock3">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
         <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_mockiness_high"/>
+        <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_performance_high"/>
         <tomasys:solvesF rdf:resource="http://www.metacontrol.org/mock#f_mock"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://www.metacontrol.org/mock#mockiness -->
@@ -69,7 +72,7 @@
     <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#mockiness">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#QualityAttributeType"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://www.metacontrol.org/mock#qa_mockiness_high -->
@@ -79,7 +82,7 @@
         <tomasys:isQAtype rdf:resource="http://www.metacontrol.org/mock#mockiness"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</tomasys:hasValue>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://www.metacontrol.org/mock#qa_mockiness_low -->
@@ -89,7 +92,7 @@
         <tomasys:isQAtype rdf:resource="http://www.metacontrol.org/mock#mockiness"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</tomasys:hasValue>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://www.metacontrol.org/mock#qa_mockiness_medium -->
@@ -99,8 +102,39 @@
         <tomasys:isQAtype rdf:resource="http://www.metacontrol.org/mock#mockiness"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</tomasys:hasValue>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.metacontrol.org/mock#qa_performance_high -->
+
+    <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#qa_performance_high">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.metacontrol.org/mock#qa_performance_low -->
+
+    <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#qa_performance_low">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</tomasys:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.metacontrol.org/mock#qa_performance_medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#qa_performance_medium">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#QAvalue"/>
+        <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
+        <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</tomasys:hasValue>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
