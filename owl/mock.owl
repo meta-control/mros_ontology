@@ -61,6 +61,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#fd_fake1">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_mockiness_low"/>
         <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_performance_low"/>
         <tomasys:solvesF rdf:resource="http://www.metacontrol.org/mock#f_fake"/>
     </owl:NamedIndividual>
@@ -71,6 +72,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#fd_fake2">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_mockiness_medium"/>
         <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_performance_medium"/>
         <tomasys:solvesF rdf:resource="http://www.metacontrol.org/mock#f_fake"/>
     </owl:NamedIndividual>
@@ -81,6 +83,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#fd_fake3">
         <rdf:type rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
+        <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_mockiness_high"/>
         <tomasys:hasQAestimation rdf:resource="http://www.metacontrol.org/mock#qa_performance_high"/>
         <tomasys:solvesF rdf:resource="http://www.metacontrol.org/mock#f_fake"/>
     </owl:NamedIndividual>
