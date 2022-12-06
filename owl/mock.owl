@@ -41,6 +41,33 @@
     
 
 
+    <!-- http://www.metacontrol.org/mock#c_mock_component_state_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#c_mock_component_state_1">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <mros:requiredBy rdf:resource="http://www.metacontrol.org/mock#fd_mock1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.metacontrol.org/mock#c_mock_component_state_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#c_mock_component_state_2">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <mros:requiredBy rdf:resource="http://www.metacontrol.org/mock#fd_mock2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.metacontrol.org/mock#c_mock_component_state_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#c_mock_component_state_3">
+        <rdf:type rdf:resource="http://metacontrol.org/tomasys#ComponentState"/>
+        <mros:requiredBy rdf:resource="http://www.metacontrol.org/mock#fd_mock3"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.metacontrol.org/mock#f_fake -->
 
     <owl:NamedIndividual rdf:about="http://www.metacontrol.org/mock#f_fake">
