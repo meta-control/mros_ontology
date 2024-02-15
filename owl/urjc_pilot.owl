@@ -19,10 +19,10 @@
         <owl:imports rdf:resource="https://raw.githubusercontent.com/meta-control/mros_ontology/main/owl/mros.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/meta-control/mros_ontology/main/owl/navigation_domain.owl"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -30,7 +30,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://metacontrol.org/tomasys#hasNFR -->
@@ -38,7 +38,7 @@
     <rdf:Description rdf:about="http://metacontrol.org/tomasys#hasNFR">
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Objective"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://ros/mros#requiredBy -->
@@ -47,10 +47,10 @@
         <rdfs:domain rdf:resource="http://metacontrol.org/tomasys#Component"/>
         <rdfs:range rdf:resource="http://metacontrol.org/tomasys#FunctionDesign"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -58,7 +58,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#f_degraded_mode -->
@@ -70,7 +70,7 @@
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/pilot_urjc#qa_safety_degraded"/>
         <tomasys:solvesF rdf:resource="http://ros/navigation_domain#f_navigate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#f_energy_saving_mode -->
@@ -82,7 +82,7 @@
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/pilot_urjc#qa_safety_energy_saving"/>
         <tomasys:solvesF rdf:resource="http://ros/navigation_domain#f_navigate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#f_normal_mode -->
@@ -94,7 +94,7 @@
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/pilot_urjc#qa_safety_normal"/>
         <tomasys:solvesF rdf:resource="http://ros/navigation_domain#f_navigate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#f_performance_mode -->
@@ -106,7 +106,7 @@
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/pilot_urjc#qa_safety_performance"/>
         <tomasys:solvesF rdf:resource="http://ros/navigation_domain#f_navigate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#f_slow_mode -->
@@ -118,7 +118,7 @@
         <tomasys:hasQAestimation rdf:resource="http://ros/metacontrol/pilot_urjc#qa_safety_slow"/>
         <tomasys:solvesF rdf:resource="http://ros/navigation_domain#f_navigate"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_energy_degraded -->
@@ -128,7 +128,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#energy"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.45</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_energy_energy_saving -->
@@ -138,7 +138,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#energy"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.34</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_energy_normal -->
@@ -148,7 +148,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#energy"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_energy_performance -->
@@ -158,7 +158,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#energy"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_energy_slow -->
@@ -168,7 +168,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#energy"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_performance_degraded -->
@@ -178,7 +178,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_performance_energy_saving -->
@@ -188,7 +188,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_performance_normal -->
@@ -198,7 +198,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_performance_performance -->
@@ -208,7 +208,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_performance_slow -->
@@ -218,7 +218,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#performance"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_safety_degraded -->
@@ -228,7 +228,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#safety"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.55</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_safety_energy_saving -->
@@ -238,7 +238,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#safety"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_safety_normal -->
@@ -248,7 +248,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#safety"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_safety_performance -->
@@ -258,7 +258,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#safety"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.55</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/metacontrol/pilot_urjc#qa_safety_slow -->
@@ -268,7 +268,7 @@
         <tomasys:isQAtype rdf:resource="http://ros/mros#safety"/>
         <tomasys:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</tomasys:hasValue>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://ros/navigation_domain#battery -->
@@ -279,7 +279,7 @@
         <mros:requiredBy rdf:resource="http://ros/metacontrol/pilot_urjc#f_performance_mode"/>
         <mros:requiredBy rdf:resource="http://ros/metacontrol/pilot_urjc#f_slow_mode"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://ros/navigation_domain#laser_resender -->
@@ -290,10 +290,10 @@
         <mros:requiredBy rdf:resource="http://ros/metacontrol/pilot_urjc#f_performance_mode"/>
         <mros:requiredBy rdf:resource="http://ros/metacontrol/pilot_urjc#f_slow_mode"/>
     </rdf:Description>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Rules
@@ -619,148 +619,6 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if component recovery, objective updatable</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">compRecov</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#Component"/>
-                        <swrl:argument1 rdf:resource="http://ros/mros#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#c_status"/>
-                                <swrl:argument1 rdf:resource="http://ros/mros#c"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RECOVERED</swrl:argument2>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#Objective"/>
-                                        <swrl:argument1 rdf:resource="http://ros/mros#o"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#o_status"/>
-                        <swrl:argument1 rdf:resource="http://ros/mros#o"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UPDATABLE</swrl:argument2>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if component in error required by FG, FG in error</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">compErrFG</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#typeFD"/>
-                        <swrl:argument1 rdf:resource="http://ros/navigation#fg"/>
-                        <swrl:argument2 rdf:resource="http://ros/navigation#fd"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#Component"/>
-                                <swrl:argument1 rdf:resource="http://ros/navigation#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://ros/mros#requiredBy"/>
-                                        <swrl:argument1 rdf:resource="http://ros/navigation#c"/>
-                                        <swrl:argument2 rdf:resource="http://ros/navigation#fd"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#FunctionGrounding"/>
-                                                <swrl:argument1 rdf:resource="http://ros/navigation#fg"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#c_status"/>
-                                                        <swrl:argument1 rdf:resource="http://ros/navigation#c"/>
-                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FALSE</swrl:argument2>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#fg_status"/>
-                        <swrl:argument1 rdf:resource="http://ros/navigation#fg"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IN_ERROR_COMPONENT</swrl:argument2>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if a component of a unique ComponentClass is in ERROR, the class is unavailable</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -824,65 +682,6 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#cc_availability"/>
                         <swrl:argument1 rdf:resource="http://ros/navigation#cc"/>
-                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if component required for FD not working, FD not available</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">compError</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://metacontrol.org/tomasys#Component"/>
-                        <swrl:argument1 rdf:resource="http://ros/navigation#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://ros/mros#requiredBy"/>
-                                <swrl:argument1 rdf:resource="http://ros/navigation#c"/>
-                                <swrl:argument2 rdf:resource="http://ros/navigation#fg"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#c_status"/>
-                                        <swrl:argument1 rdf:resource="http://ros/navigation#c"/>
-                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FALSE</swrl:argument2>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://metacontrol.org/tomasys#fd_realisability"/>
-                        <swrl:argument1 rdf:resource="http://ros/navigation#fg"/>
                         <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
                     </rdf:Description>
                 </rdf:first>
@@ -1133,4 +932,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
